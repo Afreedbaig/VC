@@ -16,7 +16,7 @@ async function login(req, res) {
       return res
         .status(httpStatus.NOT_FOUND)
         .json({ message: "User Not Found" });
-    }else if (!(bcrypt.compareSync(password, user.password)){
+    }else if (!(bcrypt.compareSync(password, user.password))){
       return res
         .status(httpStatus.401)
         .json({ message: "Incorrect Password" });
