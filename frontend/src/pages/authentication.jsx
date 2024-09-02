@@ -7,9 +7,10 @@ import Snackbar from "@mui/material/Snackbar";
 export default function Authentication() {
 
   const navigate = useNavigate();
+  useEffect(()=>{
   if(localStorage.getItem("token")){
   navigate("/home");
-  }
+  }},[])
   
   // const [error, seterror] = useState("");
   const [messages, setMessages] = useState("");
