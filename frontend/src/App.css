@@ -9,7 +9,7 @@
 
 @media (max-width: 1000px) {
   .LandingPageContainer {
-    height: 110vh;
+    height: 120vh;
   }
 }
 
@@ -169,7 +169,7 @@
     width: 23rem;
   }
   .Auth input {
-    width: 20remrem;
+    width: 20rem;
   }
   .Authsubmit {
     width: 10rem;

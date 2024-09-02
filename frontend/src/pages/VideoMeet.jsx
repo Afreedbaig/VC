@@ -533,7 +533,10 @@ export default function VideoMeetComponent() {
           </div>
         </div>
       ) : (
-        <div className="meetVideoContainer">
+        <div
+          className="meetVideoContainer"
+          id={videos.length > 1 ? "mobile" : ""}
+        >
           {showModal ? (
             <div className="chatRoom">
               <div className="chatContainer">
@@ -637,7 +640,12 @@ export default function VideoMeetComponent() {
               );
             })}
           </div>
-          <video ref={localVideoref} className="meetUserVideo" muted autoPlay></video>
+          <video
+            ref={localVideoref}
+            className="meetUserVideo"
+            muted
+            autoPlay
+          ></video>
         </div>
       )}
     </div>
