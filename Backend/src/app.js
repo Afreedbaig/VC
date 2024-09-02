@@ -28,8 +28,8 @@ const run = async () => {
     console.log("LISTENING ON PORT");
   });
 };
-app.post("/home", (req, res) => {
-  // console.log(req.body);
+app.get("/", (req, res) => {
+  res.send("welcome to the backend");
 });
 
 run();
