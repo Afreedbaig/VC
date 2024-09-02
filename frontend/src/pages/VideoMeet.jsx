@@ -637,7 +637,7 @@ export default function VideoMeetComponent() {
               );
             })}
           </div>
-          <video ref={localVideoref} className="meetUserVideo" autoPlay></video>
+          <video ref={localVideoref} className="meetUserVideo" muted autoPlay></video>
         </div>
       )}
     </div>
