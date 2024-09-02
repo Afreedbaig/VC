@@ -7,7 +7,7 @@ import Snackbar from "@mui/material/Snackbar";
 export default function Authentication() {
 
   const navigate = useNavigate();
-  if(localStorage.getItem("token"){
+  if(localStorage.getItem("token")){
   navigate("/home");
   }
   
