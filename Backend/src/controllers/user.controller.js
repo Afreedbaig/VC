@@ -16,6 +16,10 @@ async function login(req, res) {
       return res
         .status(httpStatus.NOT_FOUND)
         .json({ message: "User Not Found" });
+    }else if (!(bcrypt.compareSync(password, user.password)){
+      return res
+        .status(httpStatus.401)
+        .json({ message: "Incorrect Password" });
     }
     if (bcrypt.compareSync(password, user.password)) {
       let token = crypto.randomUUID(20).toString("hex");
@@ -24,7 +28,7 @@ async function login(req, res) {
       return res.status(httpStatus.OK).json({ token: token });
     } else {
       return res
-        .status(httpStatus.U)
+        .status(httpStatus.401)
         .json({ message: "Invalid User name or Password!!" });
     }
   } catch (e) {
