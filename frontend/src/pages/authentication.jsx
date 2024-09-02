@@ -1,10 +1,16 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState,useNavigate } from "react";
 import "../App.css";
 // import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../contexts/AuthContext";
 import Snackbar from "@mui/material/Snackbar";
 
 export default function Authentication() {
+
+  const navigate = useNavigate();
+  if(localStorage.getItem("token"){
+  navigate("/home");
+  }
+  
   // const [error, seterror] = useState("");
   const [messages, setMessages] = useState("");
   const [open, setOpen] = useState(false);
