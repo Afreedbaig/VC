@@ -631,19 +631,13 @@ export default function VideoMeetComponent() {
                       }
                     }}
                     autoPlay
-                    muted
                     style={{ width: "100%", height: "100%" }}
                   ></video>
                 </div>
               );
             })}
           </div>
-          <video
-            ref={localVideoref}
-            className="meetUserVideo"
-            autoPlay
-            muted
-          ></video>
+          <video ref={localVideoref} className="meetUserVideo" autoPlay></video>
         </div>
       )}
     </div>
