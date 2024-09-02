@@ -1,0 +1,189 @@
+.LandingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url("../public/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .LandingPageContainer {
+    height: 110vh;
+  }
+}
+
+.LandingPageContainer nav {
+  padding-inline: 1.2rem;
+  padding-block: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.LandingPageContainer nav h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.LandingPageContainer nav .navlist {
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+}
+.LandingMainContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-inline: 3rem;
+  padding-top: 25vh;
+}
+.LandingMainContainer > div {
+  font-size: 2.2rem;
+}
+.LandingMainContainer > div div[role="button"] {
+  background-color: #d97500;
+  width: 10rem;
+  height: 2.5rem;
+  justify-content: center;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+  border-radius: 20px;
+}
+
+.LandingMainContainer > div div[role="button"] a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+}
+
+/* Authentication */
+.Auth {
+  background: url("https://w0.peakpx.com/wallpaper/728/705/HD-wallpaper-abstract-lines-white-lines-minimal-blue-texture-art-u-16-9-widescreen-background-25784.jpg");
+  background-size: cover;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Authcontainer {
+  display: flex;
+
+  flex-direction: column;
+  width: 37.5rem;
+  height: 37.5rem;
+  /* margin: auto; */
+  /* margin-top: 3rem; */
+  background: #fff;
+  padding-bottom: 0.625rem;
+  border-radius: 50px;
+}
+
+.Authheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  margin-top: 1.9rem;
+}
+
+.Authtext {
+  color: #3c009d;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.Authunderline {
+  width: 3.8rem;
+  height: 0.3rem;
+  background: #3c009d;
+  border-radius: 9px;
+}
+
+.Authinputs {
+  margin-top: 3.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.Authinput {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 30rem;
+  height: 5rem;
+  background: #eaeaea;
+  border-radius: 1rem;
+}
+.Auth span {
+  margin: 0px 0.625rem;
+  margin-top: 1.2rem;
+}
+.Auth input {
+  height: 3.1rem;
+  width: 25rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #797979;
+  font-size: 19px;
+}
+
+.Authsubmit-container {
+  display: flex;
+  gap: 1.9rem;
+  margin: 3.9rem auto;
+}
+
+.Authsubmit {
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 13.75rem;
+  height: 3.6rem;
+  color: #fff;
+  border-radius: 50px;
+  background: #4c00b4;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.Authgray {
+  background: #eaeaea;
+  color: #676767;
+}
+
+@media screen and (max-width: 700px) {
+  .Authcontainer {
+    width: 25rem;
+  }
+  .Authinput {
+    width: 23rem;
+  }
+  .Auth input {
+    width: 20remrem;
+  }
+  .Authsubmit {
+    width: 10rem;
+  }
+  .Auth {
+    height: 110%;
+  }
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  align-items: center;
+  text-align: center;
+}

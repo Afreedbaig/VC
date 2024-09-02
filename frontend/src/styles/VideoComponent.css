@@ -1,0 +1,126 @@
+.meetVideoContainer {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+}
+@media (max-width: 700px) {
+  .meetVideoContainer {
+    position: relative;
+    height: 130vh;
+    width: 100vw;
+    background: black;
+  }
+}
+
+.meetUserVideo {
+  position: absolute;
+  bottom: 10vh;
+  height: 30vh;
+  width: auto;
+  left: 0;
+  border-radius: 20px;
+}
+
+.conferenceView {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  /* height: 100vh; */
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 10px;
+}
+/* .conferenceView video {
+  width: 40vw;
+  height: 30vh;
+  min-width: 30wv;
+  border-radius: 10px;
+} */
+.buttonContainers {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  text-align: center;
+}
+
+.buttonContainers svg {
+  font-size: 3rem;
+}
+
+.chatRoom {
+  position: absolute;
+  height: 90vh;
+  right: 0;
+  background: white;
+  border-radius: 10px;
+  width: 25vw;
+  padding-inline: 10px;
+}
+
+.chatContainer {
+  position: relative;
+  height: 100%;
+}
+.chattingArea {
+  position: absolute;
+  bottom: 0;
+}
+.leftPanel {
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .rightPanel > img {
+    height: 20rem;
+    width: 20rem;
+  }
+  .rightPanel {
+    margin-top: -20rem;
+  }
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.meetContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+}
+
+.Notme {
+  height: 34rem;
+  width: 44rem;
+}
+.Mebefore {
+  height: 70vh;
+  margin: auto;
+}
+
+@media (max-width: 900px) {
+  .Notme {
+    height: 19rem;
+    width: 30rem;
+  }
+  .chatRoom {
+    position: absolute;
+    height: 90vh;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    width: 50vw;
+    padding-inline: 10px;
+  }
+  .Mebefore {
+    height: 35vh;
+    margin: auto;
+  }
+}
