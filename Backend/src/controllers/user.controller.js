@@ -18,7 +18,7 @@ async function login(req, res) {
         .json({ message: "User Not Found" });
     }else if (!(bcrypt.compareSync(password, user.password))){
       return res
-        .status(httpStatus.401)
+        .status(httpStatus.UNAUTHORIZED)
         .json({ message: "Incorrect Password" });
     }
     if (bcrypt.compareSync(password, user.password)) {
@@ -28,7 +28,7 @@ async function login(req, res) {
       return res.status(httpStatus.OK).json({ token: token });
     } else {
       return res
-        .status(httpStatus.401)
+        .status(httpStatus.UNAUTHORIZED)
         .json({ message: "Invalid User name or Password!!" });
     }
   } catch (e) {
